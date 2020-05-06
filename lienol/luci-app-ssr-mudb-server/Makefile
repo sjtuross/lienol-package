@@ -5,12 +5,11 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=luci-app-v2ray-server
-LUCI_TITLE:=LuCI support for V2ray Server
-LUCI_DEPENDS:=+unzip +v2ray 
+LUCI_TITLE:=LuCI support for SSR Mudb Server
+LUCI_DEPENDS:=+libsodium +luci-lib-jsonc +python3
 LUCI_PKGARCH:=all
-PKG_VERSION:=9
-PKG_DATE:=20200501
+PKG_VERSION:=3
+PKG_RELEASE:=20200429
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
